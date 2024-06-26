@@ -24,3 +24,6 @@ Custom Components
 Transaction List component was used to create a reusuable functionality for creating multiple transaction cards.
 
 # Screenshots
+![alt text](6044153694813013099_121.jpg)
+![alt text](6044153694813013097_121.jpg)
+![alt text](6044153694813013098_121.jpg)
