@@ -5,11 +5,15 @@ import SettingsScreen from './SettingsScreen';
 import CardsScreen from './CardsScreen';
 import StatisticsScreen from './StatisticsScreen';
 import {Image} from 'react-native';
+import { ThemeProvider } from './ThemeContext';
+
 
 const Tab = createBottomTabNavigator();
 
 export default function MyTabs() {
   return (
+    <ThemeProvider>
+
     <NavigationContainer>
     <Tab.Navigator>
     <Tab.Screen 
@@ -21,7 +25,7 @@ export default function MyTabs() {
               <Image 
                 source={require('./assets/home.png')} 
                 style={{ 
-                  tintColor: focused ? 'blue' : 'gray' 
+                  tintColor: focused ? '#0066FF' : 'gray' 
                 }} 
               />
             )
@@ -37,7 +41,7 @@ export default function MyTabs() {
               <Image 
                 source={require('./assets/myCards.png')} 
                 style={{ 
-                  tintColor: focused ? 'blue' : 'gray' 
+                  tintColor: focused ? '#0066FF' : 'gray' 
                 }} 
               />
             )
@@ -54,7 +58,7 @@ export default function MyTabs() {
               <Image 
                 source={require('./assets/statictics.png')} 
                 style={{ 
-                  tintColor: focused ? 'blue' : 'gray' 
+                  tintColor: focused ? '#0066FF' : 'gray' 
                 }} 
               />
             )
@@ -73,7 +77,7 @@ export default function MyTabs() {
               <Image 
                 source={require('./assets/settings.png')} 
                 style={{ 
-                  tintColor: focused ? 'blue' : 'gray' 
+                  tintColor: focused ? '#0066FF' : 'gray' 
                 }} 
               />
             )
@@ -83,5 +87,7 @@ export default function MyTabs() {
     
     </Tab.Navigator>
     </NavigationContainer>
+    </ThemeProvider>
+
   );
 }
